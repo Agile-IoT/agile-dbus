@@ -1,7 +1,6 @@
 # Agile dbus
 
 [Dockerhub](https://hub.docker.com/r/agileiot/agile-dbus-armv7l/)
-[![Docker Pulls](https://img.shields.io/docker/pulls/mashape/kong.svg?style=flat-square)](https://hub.docker.com/r/agileiot/agile-dbus-armv7l/)
 
 This modules only responsibility is to init a dbus socket called `agile_bus_socket` in the host system with `agile.conf`.
 
