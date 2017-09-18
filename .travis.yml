@@ -16,7 +16,7 @@ env:
   matrix:
     - IMAGE=agileiot/$COMPONENT-armv7l
     - IMAGE=agileiot/$COMPONENT-x86_64
-      BASEIMAGE=resin\\/raspberry-pi3-buildpack-deps:jessie-scm-20170425
+      BASEIMAGE=resin\\/raspberry-pi3-buildpack-deps:jessie
 
 
 before_install:
