@@ -1,4 +1,9 @@
-FROM resin/armhf-alpine
+FROM resin/intel-nuc-buildpack-deps:jessie-scm-20170425
+
+# Add packages
+RUN apt-get update && apt-get install --no-install-recommends -y \
+    dbus \
+    && apt-get clean && rm -rf /var/lib/apt/lists/*
 
 COPY ./agile.conf /usr/src/app/agile.conf
 
