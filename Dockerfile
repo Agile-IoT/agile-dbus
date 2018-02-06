@@ -8,7 +8,8 @@
 # Contributors:
 #     Create-Net / FBK - initial API and implementation
 #-------------------------------------------------------------------------------
-FROM resin/armhf-alpine
+ARG BASEIMAGE_BUILD=resin/armhf-alpine
+FROM $BASEIMAGE_BUILD
 
 COPY ./agile.conf /usr/src/app/agile.conf
 
